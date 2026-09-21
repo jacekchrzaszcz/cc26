@@ -6,5 +6,5 @@ Based on Jeremy Siek's "Essentials of Compilation" book and support code, adapte
 See EOC-LICENSE for EoC support code license terms.
 
 - [notes/](notes/) - lecture notes
-- lab/ - classes & lab materials and assignments
+- [lab/](lab/) - classes & lab materials and assignments
 - support/ - support code
