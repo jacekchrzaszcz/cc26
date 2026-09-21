@@ -322,7 +322,7 @@ This edition of the course is  lab-centered.
 
 Not one big project, but a progression of simple languages
 
-- Lvar: arithmetic expressions + assignment 
+- Lvar: arithmetic expressions + assignment
 - Lwhile: conditionals and loops
 - Lfun: toplevel functions
 - extensions:
@@ -435,15 +435,19 @@ Crucial restriction:
 
 > **At most one operand of an instruction may be a memory reference.**
 
-### Examples
+- for addq/subq - s can be a 32-bit constant (immediate)
+- for movq - s can be a 64 bit constant
+
+
+### x86 Instructions Example
 
 ``` att
 pushq %rbp
-movq %rbp, %rsp
-subq $16, %rsp
-movq %rdi, 8(%rbp)
+movq %rbp, %rsp      # %rbp -> %rsp
+subq $16, %rsp       # %rsp -= 16
+movq %rdi, 8(%rbp)   # %rdi -> memory[%rbp + 8]
 callq input_int
-movq 8(rbp) %rdi
+movq 8(rbp), %rdi
 addq %rax, %rdi
 callq print_int
 movq %rbp, %rsp
@@ -456,6 +460,7 @@ retq
 The book's *Lvar* has only `+`, `-` and unary minus. Our labs add `*`.
 
 `imulq` is *not* analogous to `addq`:
+
 - its destination must be a **register**
 - there is different form for multiplication by (32 bit) constant
 
@@ -482,10 +487,10 @@ main:
 `main` returns the value in `%rax` to the operating system as the
 *exit code*.
 ```
-ben@students:~/tmp$ make answer
+$ make answer
 cc    answer.s   -o answer
-ben@students:~/tmp$ ./answer
-ben@students:~/tmp$ echo $?
+$ ./answer
+$ echo $?
 42
 ```
 
@@ -597,10 +602,10 @@ main:
 seems legit, but when we try to run it:
 
 ```
-$ make unaligned
-gcc -g -o unaligned unaligned.s runtime.c -Wl,-z,noexecstack
+$ make error
+gcc -g -o error error.s runtime.c -Wl,-z,noexecstack
 
-$ ./unaligned
+$ ./error
 Segmentation fault
 ```
 

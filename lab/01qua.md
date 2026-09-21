@@ -77,7 +77,7 @@ Note that stack must be aligned to 16 bytes, hence `subq $32, %rsp` even if the 
 
 ### Homework
 
-write a translator from *Lqua* to x86; follow the schema in `compiler_skel.py`:
+write a translator from *Lqua* to x86; follow the schema in `support/compiler_skel.py`:
 - `remove_complex_expressions` does nothing yet, it will be used in the future;
 - `select_instructions` chooses x86 instructions for *Lqua* operations; for example
 ```
