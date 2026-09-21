@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="465" height="369" viewBox="0 0 465 369" role="img" aria-label="the sumto function as a stream of lexemes, one to a box, laid out in the rows of the source lines; identifiers and numbers carry their token class beside the text">
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #16181d; }
+      .lexeme rect { fill: #272c34; stroke: #8b95a3; }
+      .lexeme .text { fill: #e4e8ee; }
+      .lexeme .class { fill: #9aa3b0; }
+    }
+  </style>
+<rect class="bg" x="0" y="0" width="465" height="369" fill="#ffffff"/>
+<g class="lexeme">
+<rect x="12.0" y="12.0" width="58.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="23.0" y="37.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">int</text>
+</g>
+<g class="lexeme">
+<rect x="78.0" y="12.0" width="111.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="89.0" y="37.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="118.5" y="37.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">sumto</text>
+</g>
+<g class="lexeme">
+<rect x="197.5" y="12.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="208.5" y="37.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">(</text>
+</g>
+<g class="lexeme">
+<rect x="239.5" y="12.0" width="58.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="250.5" y="37.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">int</text>
+</g>
+<g class="lexeme">
+<rect x="305.5" y="12.0" width="63.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="316.5" y="37.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="346.0" y="37.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">n</text>
+</g>
+<g class="lexeme">
+<rect x="377.0" y="12.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="388.0" y="37.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">)</text>
+</g>
+<g class="lexeme">
+<rect x="419.0" y="12.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="430.0" y="37.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">{</text>
+</g>
+<g class="lexeme">
+<rect x="12.0" y="56.0" width="58.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="23.0" y="81.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">int</text>
+</g>
+<g class="lexeme">
+<rect x="78.0" y="56.0" width="63.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="89.0" y="81.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="118.5" y="81.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">i</text>
+</g>
+<g class="lexeme">
+<rect x="149.5" y="56.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="160.5" y="81.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">,</text>
+</g>
+<g class="lexeme">
+<rect x="191.5" y="56.0" width="87.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="202.5" y="81.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="232.0" y="81.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">sum</text>
+</g>
+<g class="lexeme">
+<rect x="287.0" y="56.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="298.0" y="81.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">;</text>
+</g>
+<g class="lexeme">
+<rect x="12.0" y="100.0" width="63.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="23.0" y="125.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="52.5" y="125.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">i</text>
+</g>
+<g class="lexeme">
+<rect x="83.5" y="100.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="94.5" y="125.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">=</text>
+</g>
+<g class="lexeme">
+<rect x="125.5" y="100.0" width="73.4" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="136.5" y="125.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">num</text>
+<text class="text" x="175.9" y="125.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">0</text>
+</g>
+<g class="lexeme">
+<rect x="206.9" y="100.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="217.9" y="125.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">;</text>
+</g>
+<g class="lexeme">
+<rect x="12.0" y="144.0" width="87.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="23.0" y="169.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="52.5" y="169.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">sum</text>
+</g>
+<g class="lexeme">
+<rect x="107.5" y="144.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="118.5" y="169.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">=</text>
+</g>
+<g class="lexeme">
+<rect x="149.5" y="144.0" width="73.4" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="160.5" y="169.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">num</text>
+<text class="text" x="199.9" y="169.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">0</text>
+</g>
+<g class="lexeme">
+<rect x="230.9" y="144.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="241.9" y="169.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">;</text>
+</g>
+<g class="lexeme">
+<rect x="12.0" y="188.0" width="82.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="23.0" y="213.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">while</text>
+</g>
+<g class="lexeme">
+<rect x="102.0" y="188.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="113.0" y="213.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">(</text>
+</g>
+<g class="lexeme">
+<rect x="144.0" y="188.0" width="63.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="155.0" y="213.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="184.5" y="213.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">i</text>
+</g>
+<g class="lexeme">
+<rect x="215.5" y="188.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="226.5" y="213.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">&lt;</text>
+</g>
+<g class="lexeme">
+<rect x="257.5" y="188.0" width="63.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="268.5" y="213.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="298.0" y="213.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">n</text>
+</g>
+<g class="lexeme">
+<rect x="329.0" y="188.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="340.0" y="213.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">)</text>
+</g>
+<g class="lexeme">
+<rect x="371.0" y="188.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="382.0" y="213.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">{</text>
+</g>
+<g class="lexeme">
+<rect x="12.0" y="232.0" width="63.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="23.0" y="257.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="52.5" y="257.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">i</text>
+</g>
+<g class="lexeme">
+<rect x="83.5" y="232.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="94.5" y="257.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">=</text>
+</g>
+<g class="lexeme">
+<rect x="125.5" y="232.0" width="63.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="136.5" y="257.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="166.0" y="257.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">i</text>
+</g>
+<g class="lexeme">
+<rect x="197.0" y="232.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="208.0" y="257.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">+</text>
+</g>
+<g class="lexeme">
+<rect x="239.0" y="232.0" width="73.4" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="250.0" y="257.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">num</text>
+<text class="text" x="289.4" y="257.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">1</text>
+</g>
+<g class="lexeme">
+<rect x="320.4" y="232.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="331.4" y="257.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">;</text>
+</g>
+<g class="lexeme">
+<rect x="12.0" y="276.0" width="87.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="23.0" y="301.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="52.5" y="301.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">sum</text>
+</g>
+<g class="lexeme">
+<rect x="107.5" y="276.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="118.5" y="301.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">=</text>
+</g>
+<g class="lexeme">
+<rect x="149.5" y="276.0" width="87.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="160.5" y="301.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="190.0" y="301.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">sum</text>
+</g>
+<g class="lexeme">
+<rect x="245.0" y="276.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="256.0" y="301.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">+</text>
+</g>
+<g class="lexeme">
+<rect x="287.0" y="276.0" width="63.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="298.0" y="301.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="327.6" y="301.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">i</text>
+</g>
+<g class="lexeme">
+<rect x="358.6" y="276.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="369.6" y="301.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">;</text>
+</g>
+<g class="lexeme">
+<rect x="12.0" y="320.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="23.0" y="345.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">}</text>
+</g>
+<g class="lexeme">
+<rect x="54.0" y="320.0" width="94.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="65.0" y="345.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">return</text>
+</g>
+<g class="lexeme">
+<rect x="156.0" y="320.0" width="87.5" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="class" x="167.0" y="345.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="16.4" fill="#5f6874" xml:space="preserve">id</text>
+<text class="text" x="196.5" y="345.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">sum</text>
+</g>
+<g class="lexeme">
+<rect x="251.5" y="320.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="262.5" y="345.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">;</text>
+</g>
+<g class="lexeme">
+<rect x="293.5" y="320.0" width="34.0" height="37.0" rx="3.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text class="text" x="304.5" y="345.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.0" fill="#1c1f24" xml:space="preserve">}</text>
+</g>
+</svg>

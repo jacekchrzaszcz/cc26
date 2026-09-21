@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns='http://www.w3.org/2000/svg' width='1228' height='546' viewBox='0 0 1228 546' role='img' aria-label='Python abstract syntax tree of a while loop'>
+  <title>Python ast: while i &lt; n: i = i + 1; sum = sum + 1</title>
+
+  <style>
+    :root {
+      --bg:#fffffe; --edge:#a3abb6; --muted:#5f6874; --panel:#f4f5f7; --panel-s:#d7dae0;
+      --stmt-f:#dde6f7; --stmt-s:#40679d; --stmt-t:#1a3663;
+      --expr-f:#fbeedb; --expr-s:#bb8735; --expr-t:#6d4a12;
+      --atom-f:#dff0ea; --atom-s:#41897a; --atom-t:#174a3f;
+      --op-f:#eee2f5;   --op-s:#8659a8;   --op-t:#4a2a63;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:#16181d; --edge:#5a6270; --muted:#9aa3b0; --panel:#20242b; --panel-s:#333a45;
+        --stmt-f:#1e2b42; --stmt-s:#6f96d4; --stmt-t:#cfdefa;
+        --expr-f:#3a2e1a; --expr-s:#d3a45f; --expr-t:#f6e3c2;
+        --atom-f:#183129; --atom-s:#5cae9a; --atom-t:#cdeee2;
+        --op-f:#2c2038;   --op-s:#a882c9;   --op-t:#e6d6f4;
+      }
+    }
+    .bg { fill: var(--bg); }
+    .edge { stroke: var(--edge); stroke-width: 1.6; }
+    .node rect { stroke-width: 1.7; }
+    .node .title { font: 600 15px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                   text-anchor: middle; }
+    .node .attr  { font: 12.5px ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+                   text-anchor: middle; }
+    .stmt  rect { fill: var(--stmt-f); stroke: var(--stmt-s); }
+    .stmt  text { fill: var(--stmt-t); }
+    .expr  rect { fill: var(--expr-f); stroke: var(--expr-s); }
+    .expr  text { fill: var(--expr-t); }
+    .atom  rect { fill: var(--atom-f); stroke: var(--atom-s); }
+    .atom  text { fill: var(--atom-t); }
+    .op    rect { fill: var(--op-f);   stroke: var(--op-s); }
+    .op    text { fill: var(--op-t); }
+    .field { font: italic 12px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+             fill: var(--muted); text-anchor: middle;
+             paint-order: stroke; stroke: var(--bg); stroke-width: 4px; stroke-linejoin: round; }
+    .src rect { fill: var(--panel); stroke: var(--panel-s); stroke-width: 1.4; }
+    .src text { font: 14px ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+                fill: var(--muted); }
+    .legend-label { font: 12.5px 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: var(--muted); }
+  </style>
+  <rect class='bg' x='0' y='0' width='1228' height='546'/>
+  <g class='src'>
+    <rect x='28.0' y='28' width='215' height='104' rx='8'/>
+    <text x='46.0' y='58.0'>while i &lt; n:</text>
+    <text x='79.6' y='79.0'>i = i + 1</text>
+    <text x='79.6' y='100.0'>sum = sum + i</text>
+  </g>
+  <g class='legend'>
+    <g class='node stmt'><rect x='990.4' y='36.0' width='26' height='15' rx='4'/></g>
+    <text class='legend-label' x='1024.4' y='48.0'>statement</text>
+    <g class='node expr'><rect x='990.4' y='59.0' width='26' height='15' rx='4'/></g>
+    <text class='legend-label' x='1024.4' y='71.0'>expression</text>
+    <g class='node atom'><rect x='990.4' y='82.0' width='26' height='15' rx='4'/></g>
+    <text class='legend-label' x='1024.4' y='94.0'>leaf (name / literal)</text>
+    <g class='node op'><rect x='990.4' y='105.0' width='26' height='15' rx='7.5'/></g>
+    <text class='legend-label' x='1024.4' y='117.0'>operator</text>
+  </g>
+  <line class='edge' x1='558.1' y1='187.0' x2='173.0' y2='249.0'/>
+  <text class='field' x='388.7' y='218.3'>test</text>
+  <line class='edge' x1='558.1' y1='187.0' x2='493.6' y2='249.0'/>
+  <text class='field' x='516.8' y='230.7'>body[0]</text>
+  <line class='edge' x1='558.1' y1='187.0' x2='943.3' y2='249.0'/>
+  <text class='field' x='727.6' y='218.3'>body[1]</text>
+  <line class='edge' x1='173.0' y1='286.0' x2='69.0' y2='348.0'/>
+  <text class='field' x='127.2' y='317.3'>left</text>
+  <line class='edge' x1='173.0' y1='286.0' x2='173.0' y2='348.0'/>
+  <text class='field' x='173.0' y='329.7'>ops[0]</text>
+  <line class='edge' x1='173.0' y1='286.0' x2='277.0' y2='348.0'/>
+  <text class='field' x='218.8' y='317.3'>comparators[0]</text>
+  <line class='edge' x1='493.6' y1='286.0' x2='385.0' y2='348.0'/>
+  <text class='field' x='445.8' y='317.3'>targets[0]</text>
+  <line class='edge' x1='493.6' y1='286.0' x2='602.1' y2='348.0'/>
+  <text class='field' x='563.0' y='329.7'>value</text>
+  <line class='edge' x1='602.1' y1='385.0' x2='493.0' y2='463.0'/>
+  <text class='field' x='554.1' y='423.3'>left</text>
+  <line class='edge' x1='602.1' y1='385.0' x2='597.0' y2='463.0'/>
+  <text class='field' x='598.8' y='438.9'>op</text>
+  <line class='edge' x1='602.1' y1='385.0' x2='711.2' y2='463.0'/>
+  <text class='field' x='650.1' y='423.3'>right</text>
+  <line class='edge' x1='943.3' y1='286.0' x2='832.9' y2='348.0'/>
+  <text class='field' x='894.7' y='317.3'>targets[0]</text>
+  <line class='edge' x1='943.3' y1='286.0' x2='1053.7' y2='348.0'/>
+  <text class='field' x='1013.9' y='329.7'>value</text>
+  <line class='edge' x1='1053.7' y1='385.0' x2='947.9' y2='463.0'/>
+  <text class='field' x='1007.1' y='423.3'>left</text>
+  <line class='edge' x1='1053.7' y1='385.0' x2='1055.4' y2='463.0'/>
+  <text class='field' x='1054.8' y='438.9'>op</text>
+  <line class='edge' x1='1053.7' y1='385.0' x2='1159.4' y2='463.0'/>
+  <text class='field' x='1100.2' y='423.3'>right</text>
+  <g class='node stmt'>
+    <rect x='517.1' y='150.0' width='82.0' height='37.0' rx='8.0'/>
+    <text class='title' x='558.1' y='173.0'>While</text>
+  </g>
+  <g class='node expr'>
+    <rect x='126.5' y='249.0' width='93.1' height='37.0' rx='8.0'/>
+    <text class='title' x='173.0' y='272.0'>Compare</text>
+  </g>
+  <g class='node atom'>
+    <rect x='28.0' y='348.0' width='82.0' height='53.0' rx='8.0'/>
+    <text class='title' x='69.0' y='371.0'>Name</text>
+    <text class='attr' x='69.0' y='387.0'>id=&#39;i&#39;</text>
+  </g>
+  <g class='node op'>
+    <rect x='136.0' y='348.0' width='74.0' height='37.0' rx='18.5'/>
+    <text class='title' x='173.0' y='371.0'>Lt</text>
+  </g>
+  <g class='node atom'>
+    <rect x='236.0' y='348.0' width='82.0' height='53.0' rx='8.0'/>
+    <text class='title' x='277.0' y='371.0'>Name</text>
+    <text class='attr' x='277.0' y='387.0'>id=&#39;n&#39;</text>
+  </g>
+  <g class='node stmt'>
+    <rect x='451.7' y='249.0' width='83.8' height='37.0' rx='8.0'/>
+    <text class='title' x='493.6' y='272.0'>Assign</text>
+  </g>
+  <g class='node atom'>
+    <rect x='344.0' y='348.0' width='82.0' height='53.0' rx='8.0'/>
+    <text class='title' x='385.0' y='371.0'>Name</text>
+    <text class='attr' x='385.0' y='387.0'>id=&#39;i&#39;</text>
+  </g>
+  <g class='node expr'>
+    <rect x='561.1' y='348.0' width='82.0' height='37.0' rx='8.0'/>
+    <text class='title' x='602.1' y='371.0'>BinOp</text>
+  </g>
+  <g class='node atom'>
+    <rect x='452.0' y='463.0' width='82.0' height='53.0' rx='8.0'/>
+    <text class='title' x='493.0' y='486.0'>Name</text>
+    <text class='attr' x='493.0' y='502.0'>id=&#39;i&#39;</text>
+  </g>
+  <g class='node op'>
+    <rect x='560.0' y='463.0' width='74.0' height='37.0' rx='18.5'/>
+    <text class='title' x='597.0' y='486.0'>Add</text>
+  </g>
+  <g class='node atom'>
+    <rect x='660.0' y='463.0' width='102.4' height='53.0' rx='8.0'/>
+    <text class='title' x='711.2' y='486.0'>Constant</text>
+    <text class='attr' x='711.2' y='502.0'>value=1</text>
+  </g>
+  <g class='node stmt'>
+    <rect x='901.4' y='249.0' width='83.8' height='37.0' rx='8.0'/>
+    <text class='title' x='943.3' y='272.0'>Assign</text>
+  </g>
+  <g class='node atom'>
+    <rect x='788.4' y='348.0' width='89.0' height='53.0' rx='8.0'/>
+    <text class='title' x='832.9' y='371.0'>Name</text>
+    <text class='attr' x='832.9' y='387.0'>id=&#39;sum&#39;</text>
+  </g>
+  <g class='node expr'>
+    <rect x='1012.7' y='348.0' width='82.0' height='37.0' rx='8.0'/>
+    <text class='title' x='1053.7' y='371.0'>BinOp</text>
+  </g>
+  <g class='node atom'>
+    <rect x='903.4' y='463.0' width='89.0' height='53.0' rx='8.0'/>
+    <text class='title' x='947.9' y='486.0'>Name</text>
+    <text class='attr' x='947.9' y='502.0'>id=&#39;sum&#39;</text>
+  </g>
+  <g class='node op'>
+    <rect x='1018.4' y='463.0' width='74.0' height='37.0' rx='18.5'/>
+    <text class='title' x='1055.4' y='486.0'>Add</text>
+  </g>
+  <g class='node atom'>
+    <rect x='1118.4' y='463.0' width='82.0' height='53.0' rx='8.0'/>
+    <text class='title' x='1159.4' y='486.0'>Name</text>
+    <text class='attr' x='1159.4' y='502.0'>id=&#39;i&#39;</text>
+  </g>
+</svg>
