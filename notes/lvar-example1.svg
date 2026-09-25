@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1134" height="711" viewBox="0 0 1134 711" role="img" aria-label="a program before and after a compiler pass">
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #16181d; }
+      .mark { fill: #333a45; }
+      .code { fill: #e4e8ee; }
+      .caption, .arrow-label { fill: #9aa3b0; }
+      .arrow polygon { fill: #272c34; stroke: #8b95a3; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="1134" height="711" fill="#ffffff"/>
+  <g>
+    <text class="code" x="50.4" y="358.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">print(input_int() - 10)</text>
+  </g>
+  <g class="arrow">
+    <polygon points="459.2,333.2 562.8,333.2 562.8,312.2 624.4,355.6 562.8,399.0 562.8,378.0 459.2,378.0" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <text class="code" x="680.4" y="53.8" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    .globl main</text>
+    <text class="code" x="680.4" y="94.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">main:</text>
+    <text class="code" x="680.4" y="135.0" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    pushq %rbp</text>
+    <text class="code" x="680.4" y="175.6" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    movq %rsp, %rbp</text>
+    <text class="code" x="680.4" y="216.2" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    subq $16, %rsp</text>
+    <text class="code" x="680.4" y="256.8" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    callq input_int</text>
+    <text class="code" x="680.4" y="297.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    movq %rax, -8(%rbp)</text>
+    <text class="code" x="680.4" y="338.0" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    movq -8(%rbp), %rax</text>
+    <text class="code" x="680.4" y="378.6" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    movq %rax, -16(%rbp)</text>
+    <text class="code" x="680.4" y="419.2" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    subq $10, -16(%rbp)</text>
+    <text class="code" x="680.4" y="459.8" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    movq -16(%rbp), %rdi</text>
+    <text class="code" x="680.4" y="500.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    callq print_int</text>
+    <text class="code" x="680.4" y="541.0" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    movq %rbp, %rsp</text>
+    <text class="code" x="680.4" y="581.6" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    movq $0, %rax</text>
+    <text class="code" x="680.4" y="622.2" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    popq %rbp</text>
+    <text class="code" x="680.4" y="662.8" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="28.0" fill="#1c1f24" xml:space="preserve">    retq </text>
+  </g>
+</svg>

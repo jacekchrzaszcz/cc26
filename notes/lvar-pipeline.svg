@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="687" viewBox="0 0 420 687" role="img" aria-label="the passes of the Lvar compiler and the languages between them">
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #16181d; }
+      .node { fill: #e4e8ee; }
+      .label, .note, .data { fill: #9aa3b0; }
+      .arrow line { stroke: #8b95a3; }
+      .arrow polygon { fill: #8b95a3; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="420" height="687" fill="#ffffff"/>
+  <text class="node" x="90.0" y="54.6" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">Lvar</text>
+  <g class="arrow">
+    <line x1="90.0" y1="67.5" x2="90.0" y2="123.0" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="82.2,123.0 97.8,123.0 90.0,145.5" fill="#7d7d7d"/>
+    <text class="label" x="111.0" y="113.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">remove_complex_operands</text>
+  </g>
+  <text class="node" x="90.0" y="173.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">Lqua</text>
+  <g class="arrow">
+    <line x1="90.0" y1="186.0" x2="90.0" y2="241.5" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="82.2,241.5 97.8,241.5 90.0,264.0" fill="#7d7d7d"/>
+    <text class="label" x="111.0" y="231.9" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">select_instructions</text>
+  </g>
+  <text class="node" x="90.0" y="291.6" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">x86Var</text>
+  <g class="arrow">
+    <line x1="90.0" y1="304.5" x2="90.0" y2="360.0" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="82.2,360.0 97.8,360.0 90.0,382.5" fill="#7d7d7d"/>
+    <text class="label" x="111.0" y="350.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">assign_homes</text>
+  </g>
+  <text class="node" x="90.0" y="410.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">x86+</text>
+  <text class="note" x="171.0" y="410.1" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18.6" font-style="italic" fill="#5f6874">(no variables left)</text>
+  <g class="arrow">
+    <line x1="90.0" y1="423.0" x2="90.0" y2="478.5" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="82.2,478.5 97.8,478.5 90.0,501.0" fill="#7d7d7d"/>
+    <text class="label" x="111.0" y="468.9" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">patch_instructions</text>
+  </g>
+  <text class="node" x="90.0" y="528.6" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">x86</text>
+  <text class="note" x="171.0" y="528.6" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18.6" font-style="italic" fill="#5f6874">(incomplete)</text>
+  <g class="arrow">
+    <line x1="90.0" y1="541.5" x2="90.0" y2="597.0" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="82.2,597.0 97.8,597.0 90.0,619.5" fill="#7d7d7d"/>
+    <text class="label" x="111.0" y="587.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">prelude_and_conclusion</text>
+  </g>
+  <text class="node" x="90.0" y="647.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">x86</text>
+</svg>
