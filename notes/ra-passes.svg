@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="592" height="450" viewBox="0 0 592 450" role="img" aria-label="the three passes that replace assign_homes and what each one produces">
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #16181d; }
+      .node { fill: #e4e8ee; }
+      .label, .note, .data { fill: #9aa3b0; }
+      .arrow line { stroke: #8b95a3; }
+      .arrow polygon { fill: #8b95a3; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="592" height="450" fill="#ffffff"/>
+  <text class="node" x="190.4" y="54.6" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">x86Var</text>
+  <g class="arrow">
+    <line x1="190.4" y1="67.5" x2="190.4" y2="123.0" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="182.6,123.0 198.2,123.0 190.4,145.5" fill="#7d7d7d"/>
+    <text class="label" x="211.4" y="113.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">uncover_live</text>
+  </g>
+  <text class="data" x="190.4" y="173.1" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19.8" font-style="italic" fill="#5f6874" text-anchor="middle">live-after set per instruction</text>
+  <g class="arrow">
+    <line x1="190.4" y1="186.0" x2="190.4" y2="241.5" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="182.6,241.5 198.2,241.5 190.4,264.0" fill="#7d7d7d"/>
+    <text class="label" x="211.4" y="231.9" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">build_interference_graph</text>
+  </g>
+  <text class="data" x="190.4" y="291.6" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19.8" font-style="italic" fill="#5f6874" text-anchor="middle">interference graph</text>
+  <g class="arrow">
+    <line x1="190.4" y1="304.5" x2="190.4" y2="360.0" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="182.6,360.0 198.2,360.0 190.4,382.5" fill="#7d7d7d"/>
+    <text class="label" x="211.4" y="350.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">allocate_registers</text>
+  </g>
+  <text class="node" x="190.4" y="410.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">x86Var</text>
+  <text class="note" x="371.9" y="410.1" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18.6" font-style="italic" fill="#5f6874">(no variables left)</text>
+</svg>

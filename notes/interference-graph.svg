@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="447" height="279" viewBox="0 0 447 279" role="img" aria-label="the interference graph of the example program">
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #16181d; }
+      .edge { stroke: #8b95a3; }
+      .vertex circle { fill: #272c34; stroke: #8b95a3; }
+      .vertex text, .legend text { fill: #e4e8ee; }
+      .c0 circle { fill: #1e3147; stroke: #7ea6d8; }
+      .c1 circle { fill: #3b2e17; stroke: #d2a054; }
+      .c2 circle { fill: #2e2340; stroke: #ab88cf; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="447" height="279" fill="#ffffff"/>
+  <line class="edge" x1="49.5" y1="49.5" x2="136.5" y2="139.5" stroke="#7d7d7d" stroke-width="2.6"/>
+  <line class="edge" x1="136.5" y1="139.5" x2="223.5" y2="49.5" stroke="#7d7d7d" stroke-width="2.6"/>
+  <line class="edge" x1="136.5" y1="139.5" x2="49.5" y2="229.5" stroke="#7d7d7d" stroke-width="2.6"/>
+  <line class="edge" x1="136.5" y1="139.5" x2="223.5" y2="229.5" stroke="#7d7d7d" stroke-width="2.6"/>
+  <line class="edge" x1="49.5" y1="229.5" x2="223.5" y2="229.5" stroke="#7d7d7d" stroke-width="2.6"/>
+  <line class="edge" x1="223.5" y1="229.5" x2="397.5" y2="229.5" stroke="#7d7d7d" stroke-width="2.6"/>
+  <line class="edge" x1="397.5" y1="229.5" x2="397.5" y2="49.5" stroke="#7d7d7d" stroke-width="2.6"/>
+  <g class="vertex">
+    <circle cx="397.5" cy="229.5" r="28.5" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="397.5" y="239.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="25.8" font-weight="600" fill="#1c1f24" text-anchor="middle">_1</text>
+  </g>
+  <g class="vertex">
+    <circle cx="397.5" cy="49.5" r="28.5" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="397.5" y="59.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="25.8" font-weight="600" fill="#1c1f24" text-anchor="middle">_2</text>
+  </g>
+  <g class="vertex">
+    <circle cx="49.5" cy="49.5" r="28.5" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="49.5" y="59.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="25.8" font-weight="600" fill="#1c1f24" text-anchor="middle">v</text>
+  </g>
+  <g class="vertex">
+    <circle cx="136.5" cy="139.5" r="28.5" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="136.5" y="149.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="25.8" font-weight="600" fill="#1c1f24" text-anchor="middle">w</text>
+  </g>
+  <g class="vertex">
+    <circle cx="223.5" cy="49.5" r="28.5" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="223.5" y="59.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="25.8" font-weight="600" fill="#1c1f24" text-anchor="middle">x</text>
+  </g>
+  <g class="vertex">
+    <circle cx="49.5" cy="229.5" r="28.5" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="49.5" y="239.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="25.8" font-weight="600" fill="#1c1f24" text-anchor="middle">y</text>
+  </g>
+  <g class="vertex">
+    <circle cx="223.5" cy="229.5" r="28.5" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="223.5" y="239.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="25.8" font-weight="600" fill="#1c1f24" text-anchor="middle">z</text>
+  </g>
+</svg>
