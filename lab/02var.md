@@ -80,12 +80,34 @@ print(_5)
 ```
 (using `_i` for variable names  is a suggestion based on the assumption such names are not used in the source program; if you want to completely eliminate the collison risk, you may use names that are not valid variable names such as `%tmp1` or a separate AST node type)
 
+## Final checks
+Write some tests for your translator; make sure all key functionalities are covered.
+
+- multiplication
+- generating temporary names
+- complex expressions
+
 ## Submission
 
 Present your work on the 3rd (2p) or 4th lab (1p).
+
 Submit your work on moodle (as tar.gz) before presenting.
 
-**Stretch goal**
+Submit a single `<uid>.tar.gz` file to moodle, where uid is your user id on students, in the format `xy128410`.
+
+
+## Recommended practices
+
+Use git (or Jujutsu over git) for version management **from the start**.
+
+Use uv for Python project management you can point it at support files instead of copying them:
+
+```
+[tool.uv.sources]
+mrj-support = { path = "../support", editable = true }
+```
+
+## Stretch goal
 
 Ensure the resulting code is in *Static Single Assignment* (SSA) form: every variable is assigned exactly once.
 

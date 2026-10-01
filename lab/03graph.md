@@ -86,11 +86,34 @@ including spilling variables to the stack (to this end, instead of using a zilli
 6. Modify `prelude_and_conclusion` to save and restore used callee-save registers. Remember to keep stack aligned to 16 bytes.
 
 
-Simplified (inefficient) initial approach:
+Possible simplified (inefficient) initial approach:
 - save/restore all callee-saved registers in prelude/conclusion
 - allocate only callee-saved registers
+
+## Final checks
+
+Write some tests; make sure all key functionalities are covered.
+
+- interfering variables get different registers
+- noninterfering variables may get the same register
+- spilling
+- call-live variables get callee-saved registers
+- used callee-saved registers are saved in the preluce and restored in the conclusion
+- stack alignemnt
 
 ## Submission
 
 - discuss with your tutor on the 4th (5p) or 5th (4p) lab
 - submit to moodle before presenting
+- submit a single `<uid>.tar.gz` file, where uid is your user id on students, in the format `xy128410`
+
+## Recommended practices
+
+Use git (or Jujutsu over git) for version management **from the start**.
+
+Use uv for Python project management you can point it at support files instead of copying them:
+
+```
+[tool.uv.sources]
+mrj-support = { path = "../support", editable = true }
+```

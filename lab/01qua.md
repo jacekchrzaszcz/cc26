@@ -141,11 +141,21 @@ The `movq $0 %rax` is optional but adding it in the `main` function may make tes
 
 You can use x86 abstract syntax provided in `support/x86_ast.py` (for this task `Instr`, `Callq` and `X86Program` should be enough).
 
+
+## Final checks
+
+Write some tests for your translator; make sure all key functionalities are covered.
+
+- generated code assembles and runs correctly
+- subtraction, negation
+- number of stack slots used, stack alignment
+- `input_int`
+
 ## Submission
 
-Write at least 3 tests for your translator; do not forget to test `input_int()`.
-
 Present your work on the next lab (2p) or a week later (1p).
+
+Submit a single `<uid>.tar.gz` file to moodle, where uid is your user id on students, in the format `xy128410`
 
 ## Recommended practices
 

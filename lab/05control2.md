@@ -207,6 +207,30 @@ silently reusing a register.
   means threading the enclosing loop's header and exit labels through
   `explicate_stmt` for the duration of the loop's body.
 
+## Final check
+Write some tests; make sure all key functionalities are covered.
+
+- short circuit evaluation
+- if expressions and statements
+- logical expressions in assignments and conditions
+- temporary variables in branches and loop conditions do not escape
+- blocks are not duplicated for nested conditionals
+- nested loops
+- liveness and register allocation with loops
+
 ## Submission
+
 - discuss with your tutor on the 6th (5p) or 7th (4p) lab
 - submit to moodle before presenting
+- submit a single `<uid>.tar.gz` file, where uid is your user id on students, in the format `xy128410`
+
+## Recommended practices
+
+Use git (or Jujutsu over git) for version management **from the start**.
+
+Use uv for Python project management you can point it at support files instead of copying them:
+
+```
+[tool.uv.sources]
+mrj-support = { path = "../support", editable = true }
+```
