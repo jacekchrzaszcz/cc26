@@ -92,5 +92,5 @@ Simplified (inefficient) initial approach:
 
 ## Submission
 
-- discuss with your tutor on the 4th (5p) or 5th (3p) lab
+- discuss with your tutor on the 4th (5p) or 5th (4p) lab
 - submit to moodle before presenting

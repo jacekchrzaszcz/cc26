@@ -807,7 +807,8 @@ while i - 1 > 0:
 ```
 
 In front of the loop, `i - 1` would be computed once --- for the first
-test only. They have to stay **inside** the test, and `Begin` is again
+test only.<br/>
+They have to stay **inside** the test, and `Begin` is again
 what holds them.
 
 An `if` is different: its test temporaries can be hoisted in front of
@@ -844,9 +845,39 @@ Our loop from the start of the lecture, after instruction selection
 
 ![](loop-cfg.svg)
 
-`after` is fine: live-before `{sum}`. But `loop` needs `body` and
+`after` is fine: live-before `{sum}`.<br/>
+But `loop` needs `body` and
 `body` needs `loop` --- no order puts successors first, because there
 is no topological order.
+
+Original source:
+```python
+sum = 0
+i = 5
+while i > 0:
+    sum = sum + i
+    i = i - 1
+print(sum)
+```
+
+### The cycle - livesets
+
+![](loop-cfg.svg)
+
+We get a recursive set of equations:
+
+```
+live_after(after)      = {}
+live_after(loop)       = live_before(after) U live_before(body)
+live_after(body)       = live_before(loop)
+live_after(main_start) = live_before(loop)
+
+live_before(after)     = live_after(after) U {sum}
+live_before(loop)      = live_after(loop) U {i}
+live_before(body)      = live_after(body) U {i, sum}
+```
+
+Can be solved by iterating to a fixpoint.
 
 ### Computing the fixpoint
 
@@ -910,8 +941,8 @@ print(acc)
 ```
 
 Both are carried round the loop *and* live across `callq input_int`,
-so neither may have a caller-saved register --- `acc` gets `%rbx`, `n`
-gets `%r12`, and the prelude pays for them:
+so neither may have a caller-saved register<br/> --- `acc` gets `%rbx`, `n`
+gets `%r12`, and the prelude saves them:
 
 ```att
 main:                      block.2:
