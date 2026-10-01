@@ -389,15 +389,6 @@ Independently, solutions need to be submitted to moodle.
 | extensions   | Week 11        | Week 12         | Dec 15   | up to 16
 
 
-| Project      | Presentation   | Late Presentation | Moodle submission
-|--------------|----------------|-----------------| -----
-| Lqua         | Week 2         | Week 3          | Oct 15
-| Lvar         | Week 3         | Week 4          | Oct 20
-| reg alloc    | Week 4         | Week 5          | Oct 27
-| loops        | Week 6         | Week 7          | Nov 10
-| functions    | Week 8         | Week 10         | Nov 24
-| extensions   | Week 11        | Week 12         | Dec 15
-
 Note: approximate dates, binding dates on Moodle.
 
 **No submissions after the Moodle cut-off date ("ostateczny termin") will be accepted**
