@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="638" height="852" viewBox="0 0 638 852" role="img" aria-label="the passes of the Lfun compiler; the back end runs once per function">
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #16181d; }
+      .node { fill: #e4e8ee; }
+      .label, .note, .data { fill: #9aa3b0; }
+      .arrow line { stroke: #8b95a3; }
+      .arrow polygon { fill: #8b95a3; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="638" height="852" fill="#ffffff"/>
+  <text class="node" x="126.0" y="54.6" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">Lfun</text>
+  <g class="arrow">
+    <line x1="126.0" y1="67.5" x2="126.0" y2="123.0" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="118.2,123.0 133.8,123.0 126.0,145.5" fill="#7d7d7d"/>
+    <text class="label" x="147.0" y="113.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">shrink</text>
+    <text class="note" x="245.3" y="113.4" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18.6" font-style="italic" fill="#5f6874">(top-level stmts -&gt; main())</text>
+  </g>
+  <text class="node" x="126.0" y="173.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">Lfun</text>
+  <g class="arrow">
+    <line x1="126.0" y1="186.0" x2="126.0" y2="241.5" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="118.2,241.5 133.8,241.5 126.0,264.0" fill="#7d7d7d"/>
+    <text class="label" x="147.0" y="231.9" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">remove_complex_operands</text>
+    <text class="note" x="447.2" y="231.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18.6" font-style="italic" fill="#5f6874">(+ Call, Return)</text>
+  </g>
+  <text class="node" x="126.0" y="291.6" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">Lfun^mon</text>
+  <g class="arrow">
+    <line x1="126.0" y1="304.5" x2="126.0" y2="360.0" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="118.2,360.0 133.8,360.0 126.0,382.5" fill="#7d7d7d"/>
+    <text class="label" x="147.0" y="350.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">explicate_control</text>
+    <text class="note" x="376.0" y="350.4" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18.6" font-style="italic" fill="#5f6874">(+ explicate_tail)</text>
+  </g>
+  <text class="node" x="126.0" y="410.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">CFun</text>
+  <text class="note" x="243.0" y="410.1" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18.6" font-style="italic" fill="#5f6874">(one block dict per definition)</text>
+  <g class="arrow">
+    <line x1="126.0" y1="423.0" x2="126.0" y2="478.5" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="118.2,478.5 133.8,478.5 126.0,501.0" fill="#7d7d7d"/>
+    <text class="label" x="147.0" y="468.9" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">select_instructions</text>
+  </g>
+  <text class="node" x="126.0" y="528.6" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">x86Fun_Var</text>
+  <g class="arrow">
+    <line x1="126.0" y1="541.5" x2="126.0" y2="620.2" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="118.2,620.2 133.8,620.2 126.0,642.7" fill="#7d7d7d"/>
+    <text class="label" x="147.0" y="573.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">uncover_live</text>
+    <text class="note" x="316.6" y="573.3" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18.6" font-style="italic" fill="#5f6874">(once per definition)</text>
+    <text class="label" x="147.0" y="599.0" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">build_interference_graph</text>
+    <text class="label" x="147.0" y="624.8" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">allocate_registers</text>
+  </g>
+  <text class="node" x="126.0" y="670.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">x86Fun</text>
+  <text class="note" x="243.0" y="670.3" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18.6" font-style="italic" fill="#5f6874">(no variables left)</text>
+  <g class="arrow">
+    <line x1="126.0" y1="683.2" x2="126.0" y2="761.9" stroke="#7d7d7d" stroke-width="2.6"/>
+    <polygon points="118.2,761.9 133.8,761.9 126.0,784.4" fill="#7d7d7d"/>
+    <text class="label" x="147.0" y="715.0" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">patch_instructions</text>
+    <text class="label" x="147.0" y="740.8" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">prelude_and_conclusion</text>
+    <text class="label" x="147.0" y="766.5" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="19.8" fill="#5f6874">flatten</text>
+    <text class="note" x="257.2" y="766.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18.6" font-style="italic" fill="#5f6874">(one block dict, .align per entry)</text>
+  </g>
+  <text class="node" x="126.0" y="812.0" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="30.0" font-weight="600" fill="#1c1f24" text-anchor="middle">x86</text>
+</svg>

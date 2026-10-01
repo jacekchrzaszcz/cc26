@@ -75,6 +75,33 @@ main:
 ```
 Note that stack must be aligned to 16 bytes, hence `subq $32, %rsp` even if the variables only use 24.
 
+### The runtime
+
+```c
+long input_int() {
+    long x;
+    int count = scanf("%ld", &x);
+    if (count) return x;
+    else { puts("input_int failed!\n\n"); return 0; }
+}
+
+void print(long x) {
+    printf("%ld\n", x);
+}
+```
+
+Compile and link with the generated assembly:
+
+```
+gcc -g -o prog prog.s runtime.c -Wl,-z,noexecstack
+```
+
+without the final option pack we may get a warning:
+
+```
+ld: warning: missing .note.GNU-stack section implies executable stack
+```
+
 ### Homework
 
 write a translator from *Lqua* to x86; follow the schema in `support/compiler_skel.py`:

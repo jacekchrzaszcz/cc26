@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="418" height="286" viewBox="0 0 418 286" role="img" aria-label="the control-flow graph of the if/else example: main_start splits into block.1 and block.2, which both jump to block.0">
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #16181d; }
+      .code { fill: #e4e8ee; }
+      .edge { stroke: #8b95a3; }
+      .edge polygon { fill: #8b95a3; stroke: none; }
+      .node rect { fill: #272c34; stroke: #8b95a3; }
+      .node text { fill: #e4e8ee; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="418" height="286" fill="#ffffff"/>
+  <g class="edge">
+    <line x1="176.3" y1="67.0" x2="132.2" y2="104.2" stroke="#7d7d7d" stroke-width="2.6" stroke-linecap="round"/>
+    <polygon points="118.9,115.4 125.0,95.8 139.3,112.7" fill="#7d7d7d"/>
+  </g>
+  <g class="edge">
+    <line x1="241.3" y1="67.0" x2="285.4" y2="104.2" stroke="#7d7d7d" stroke-width="2.6" stroke-linecap="round"/>
+    <polygon points="298.7,115.4 278.3,112.7 292.6,95.8" fill="#7d7d7d"/>
+  </g>
+  <g class="edge">
+    <line x1="118.9" y1="170.2" x2="163.0" y2="207.4" stroke="#7d7d7d" stroke-width="2.6" stroke-linecap="round"/>
+    <polygon points="176.3,218.6 155.9,215.9 170.2,199.0" fill="#7d7d7d"/>
+  </g>
+  <g class="edge">
+    <line x1="298.7" y1="170.2" x2="254.6" y2="207.4" stroke="#7d7d7d" stroke-width="2.6" stroke-linecap="round"/>
+    <polygon points="241.3,218.6 247.4,199.0 261.7,215.9" fill="#7d7d7d"/>
+  </g>
+  <g class="node">
+    <rect x="117.6" y="16.8" width="182.4" height="45.6" rx="8.4" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="208.8" y="47.5" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.6" font-weight="600" fill="#1c1f24" text-anchor="middle">main_start</text>
+  </g>
+  <g class="node">
+    <rect x="16.8" y="120.0" width="139.2" height="45.6" rx="8.4" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="86.4" y="150.7" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.6" font-weight="600" fill="#1c1f24" text-anchor="middle">block.1</text>
+  </g>
+  <g class="node">
+    <rect x="261.6" y="120.0" width="139.2" height="45.6" rx="8.4" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="331.2" y="150.7" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.6" font-weight="600" fill="#1c1f24" text-anchor="middle">block.2</text>
+  </g>
+  <g class="node">
+    <rect x="139.2" y="223.2" width="139.2" height="45.6" rx="8.4" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="208.8" y="253.9" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.6" font-weight="600" fill="#1c1f24" text-anchor="middle">block.0</text>
+  </g>
+</svg>

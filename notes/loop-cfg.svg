@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1368" height="382" viewBox="0 0 1368 382" role="img" aria-label="the selected code of the loop example beside its control-flow graph, in which loop and body point at each other">
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #16181d; }
+      .code { fill: #e4e8ee; }
+      .edge { stroke: #8b95a3; }
+      .edge polygon { fill: #8b95a3; stroke: none; }
+      .node rect { fill: #272c34; stroke: #8b95a3; }
+      .node text { fill: #e4e8ee; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="1368" height="382" fill="#ffffff"/>
+  <text class="code" x="16.8" y="44.6" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">main_start:            body:</text>
+  <text class="code" x="16.8" y="79.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">    movq $0, sum           addq i, sum</text>
+  <text class="code" x="16.8" y="114.2" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">    movq $5, i             subq $1, i</text>
+  <text class="code" x="16.8" y="149.0" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">    jmp loop               jmp loop</text>
+  <text class="code" x="16.8" y="183.8" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve"></text>
+  <text class="code" x="16.8" y="218.6" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">loop:                  after:</text>
+  <text class="code" x="16.8" y="253.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">    cmpq $0, i             movq sum, %rdi</text>
+  <text class="code" x="16.8" y="288.2" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">    jg body                callq print_int</text>
+  <text class="code" x="16.8" y="323.0" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">    jmp after              movq $0, %rax</text>
+  <text class="code" x="16.8" y="357.8" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">                           jmp main_conclusion</text>
+  <g class="edge">
+    <line x1="940.8" y1="139.2" x2="1021.9" y2="139.2" stroke="#7d7d7d" stroke-width="2.6" stroke-linecap="round"/>
+    <polygon points="1039.2,139.2 1021.9,150.2 1021.9,128.2" fill="#7d7d7d"/>
+  </g>
+  <g class="edge">
+    <line x1="1094.4" y1="169.2" x2="1094.4" y2="195.1" stroke="#7d7d7d" stroke-width="2.6" stroke-linecap="round"/>
+    <polygon points="1094.4,212.4 1083.4,195.1 1105.4,195.1" fill="#7d7d7d"/>
+  </g>
+  <g class="edge">
+    <path d="M 1149.6 128.4 Q 1198.8 90.0 1235.7 118.8" fill="none" stroke="#7d7d7d" stroke-width="2.6" stroke-linecap="round"/>
+    <polygon points="1248.0,128.4 1227.6,126.5 1241.2,109.1" fill="#7d7d7d"/>
+  </g>
+  <g class="edge">
+    <path d="M 1248.0 150.0 Q 1198.8 188.4 1161.9 159.6" fill="none" stroke="#7d7d7d" stroke-width="2.6" stroke-linecap="round"/>
+    <polygon points="1149.6,150.0 1170.0,151.9 1156.4,169.3" fill="#7d7d7d"/>
+  </g>
+  <g class="node">
+    <rect x="751.2" y="116.4" width="182.4" height="45.6" rx="8.4" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="842.4" y="147.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.6" font-weight="600" fill="#1c1f24" text-anchor="middle">main_start</text>
+  </g>
+  <g class="node">
+    <rect x="1046.4" y="116.4" width="96.0" height="45.6" rx="8.4" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="1094.4" y="147.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.6" font-weight="600" fill="#1c1f24" text-anchor="middle">loop</text>
+  </g>
+  <g class="node">
+    <rect x="1255.2" y="116.4" width="96.0" height="45.6" rx="8.4" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="1303.2" y="147.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.6" font-weight="600" fill="#1c1f24" text-anchor="middle">body</text>
+  </g>
+  <g class="node">
+    <rect x="1039.2" y="219.6" width="110.4" height="45.6" rx="8.4" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4"/>
+    <text x="1094.4" y="250.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="20.6" font-weight="600" fill="#1c1f24" text-anchor="middle">after</text>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="574" height="616" viewBox="0 0 574 616" role="img" aria-label="the same control-flow graph after renaming each definition apart: block L1 starts with i1 = ?; r1 = ?, because what it should read depends on which of the two incoming edges was taken">
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #16181d; }
+      .edge line, .edge path { stroke: #8b95a3; }
+      .edge polygon { fill: #8b95a3; }
+      .edge.mark line, .edge.mark path { stroke: #ff9a8d; }
+      .edge.mark polygon { fill: #ff9a8d; }
+      .edge.mark2 line, .edge.mark2 path { stroke: #8bb8ea; }
+      .edge.mark2 polygon { fill: #8bb8ea; }
+      .block rect { fill: #272c34; stroke: #8b95a3; }
+      .block text { fill: #e4e8ee; }
+      .block tspan.mark { fill: #ff9a8d; }
+      .block tspan.mark2 { fill: #8bb8ea; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="574" height="616" fill="#ffffff"/>
+  <g class="edge">
+    <line x1="287.1" y1="173.8" x2="287.1" y2="180.0" stroke="#7d7d7d" stroke-width="2.4" stroke-linecap="round"/>
+    <polygon points="287.1,195.8 277.0,180.0 297.2,180.0" fill="#7d7d7d"/>
+  </g>
+  <g class="edge">
+    <line x1="287.1" y1="328.9" x2="287.1" y2="335.1" stroke="#7d7d7d" stroke-width="2.4" stroke-linecap="round"/>
+    <polygon points="287.1,350.9 277.0,335.1 297.2,335.1" fill="#7d7d7d"/>
+  </g>
+  <g class="edge">
+    <path d="M 77.0 262.3 L 46.2 262.3 Q 30.8 262.3 30.8 277.7 L 30.8 557.1 Q 30.8 572.5 46.2 572.5 L 160.2 572.5" fill="none" stroke="#7d7d7d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="176.0,572.5 160.2,582.7 160.2,562.4" fill="#7d7d7d"/>
+  </g>
+  <g class="edge">
+    <path d="M 391.6 433.4 L 528.0 433.4 Q 543.4 433.4 543.4 418.0 L 543.4 277.7 Q 543.4 262.3 528.0 262.3 L 513.0 262.3" fill="none" stroke="#7d7d7d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="497.2,262.3 513.0,252.2 513.0,272.5" fill="#7d7d7d"/>
+  </g>
+  <g class="block">
+    <rect x="209.0" y="15.4" width="156.2" height="151.8" rx="6.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.2"/>
+    <text x="227.7" y="52.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">entry:</text>
+    <text x="227.7" y="84.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">  i0 = n</text>
+    <text x="227.7" y="116.2" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">  r0 = 1</text>
+    <text x="227.7" y="148.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">  goto L1</text>
+  </g>
+  <g class="block">
+    <rect x="83.6" y="202.4" width="407.0" height="119.9" rx="6.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.2"/>
+    <text x="102.3" y="239.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">L1:</text>
+    <text x="102.3" y="271.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">  i1 = <tspan class="mark" fill="#b3261e">?</tspan>; r1 = <tspan class="mark" fill="#b3261e">?</tspan></text>
+    <text x="102.3" y="303.2" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">  if i1 &lt;= 1 goto L3 else L2</text>
+  </g>
+  <g class="block">
+    <rect x="189.2" y="357.5" width="195.8" height="151.8" rx="6.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.2"/>
+    <text x="207.9" y="394.5" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">L2:</text>
+    <text x="207.9" y="426.4" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">  i2 = i1-1</text>
+    <text x="207.9" y="458.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">  r2 = r1*i2</text>
+    <text x="207.9" y="490.2" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">  goto L1</text>
+  </g>
+  <g class="block">
+    <rect x="182.6" y="544.5" width="209.0" height="56.1" rx="6.6" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.2"/>
+    <text x="201.3" y="581.5" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">L3: return r1</text>
+  </g>
+</svg>

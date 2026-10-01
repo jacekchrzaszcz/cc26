@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="251" viewBox="0 0 740 251" role="img" aria-label="one function's stack frame: the return address and the old %rbp above it, then the callee-saved registers and the spilled variables, each labelled with the instruction that put it there">
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #16181d; }
+      .cell rect { fill: #272c34; stroke: #8b95a3; }
+      .ghost rect { fill: #16181d; stroke: #8b95a3; }
+      .cell text, .ghost text, .addr { fill: #e4e8ee; }
+      .note { fill: #9aa3b0; }
+      .ptr text { fill: #e4e8ee; }
+      .ptr line { stroke: #8b95a3; }
+      .ptr polygon { fill: #8b95a3; }
+    }
+  </style>
+<rect class="bg" x="0" y="0" width="740" height="251" fill="#ffffff"/>
+<g class="ghost">
+<rect x="261.1" y="18.7" width="308.0" height="37.4" rx="4.0" fill="#ffffff" stroke="#7d7d7d" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="415.1" y="44.9" text-anchor="middle" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">the caller's frame</text>
+</g>
+<g class="cell">
+<rect x="261.1" y="62.7" width="308.0" height="37.4" rx="4.0" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text x="415.1" y="88.9" text-anchor="middle" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">return address</text>
+</g>
+<text class="addr" x="239.1" y="88.9" text-anchor="end" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="18.0" fill="#1c1f24" xml:space="preserve">8(%rbp)</text>
+<text class="note" x="591.1" y="88.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17.2" fill="#5f6874">pushed by callq</text>
+<g class="cell">
+<rect x="261.1" y="106.7" width="308.0" height="37.4" rx="4.0" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text x="415.1" y="132.9" text-anchor="middle" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">old %rbp</text>
+</g>
+<text class="addr" x="239.1" y="132.9" text-anchor="end" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="18.0" fill="#1c1f24" xml:space="preserve">0(%rbp)</text>
+<text class="note" x="591.1" y="132.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17.2" fill="#5f6874">pushq %rbp</text>
+<g class="ptr"><text x="15.4" y="132.0" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="18.9" fill="#1c1f24">%rbp</text><line x1="67.4" y1="125.4" x2="69.6" y2="125.4" stroke="#7d7d7d" stroke-width="1.5"/><polygon points="85.0,125.4 69.6,120.6 69.6,130.2" fill="#7d7d7d"/></g>
+<g class="cell">
+<rect x="261.1" y="150.7" width="308.0" height="37.4" rx="4.0" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text x="415.1" y="176.9" text-anchor="middle" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">callee-saved 1 ... j</text>
+</g>
+<text class="addr" x="239.1" y="176.9" text-anchor="end" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="18.0" fill="#1c1f24" xml:space="preserve">-8(%rbp) ...</text>
+<text class="note" x="591.1" y="176.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17.2" fill="#5f6874">pushq %rbx ...</text>
+<g class="cell">
+<rect x="261.1" y="194.7" width="308.0" height="37.4" rx="4.0" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="1.5"/>
+<text x="415.1" y="220.9" text-anchor="middle" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="22.0" fill="#1c1f24" xml:space="preserve">local 1 ... k</text>
+</g>
+<text class="addr" x="239.1" y="220.9" text-anchor="end" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="18.0" fill="#1c1f24" xml:space="preserve">... -8(j+k)</text>
+<text class="note" x="591.1" y="220.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17.2" fill="#5f6874">subq $8k, %rsp</text>
+<g class="ptr"><text x="15.4" y="220.0" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="18.9" fill="#1c1f24">%rsp</text><line x1="67.4" y1="213.4" x2="69.6" y2="213.4" stroke="#7d7d7d" stroke-width="1.5"/><polygon points="85.0,213.4 69.6,208.6 69.6,218.2" fill="#7d7d7d"/></g>
+</svg>

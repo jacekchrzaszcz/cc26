@@ -25,10 +25,7 @@
 
 For details see EoC, section 4.2.
 However note that it recommends using a dictionary mapping instruction to live-sets.
-This may lead to erroneous results if the same instruction occurs more than once in different context
-unless the dictionary key includes the instruction number, so it is better to use instruction numbers or (number,instruction) pairs as keys.
-
-(Another - a bit dirty - way is to make the live set an attribute of the instruction itself, perhaps using `__setattr__`)
+This is fine if you use `support/x86_ast`, but if you roll your own, it may be better to use instruction numbers or (number,instruction) pairs as keys.
 
 Compute the set of call-live variables (variables live during a call) - they should not be placed in caller-save registers.
 

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1188" height="262" viewBox="0 0 1188 262" role="img" aria-label="a program before and after a compiler pass">
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #16181d; }
+      .mark { fill: #333a45; }
+      .code { fill: #e4e8ee; }
+      .caption, .arrow-label { fill: #9aa3b0; }
+      .arrow polygon { fill: #272c34; stroke: #8b95a3; }
+    }
+  </style>
+  <rect class="bg" x="0" y="0" width="1188" height="262" fill="#ffffff"/>
+  <g>
+    <text class="code" x="43.2" y="133.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">print((input_int() + 1) if x &gt; 0 else 0)</text>
+  </g>
+  <g class="arrow">
+    <polygon points="667.2,111.6 756.0,111.6 756.0,93.6 808.8,130.8 756.0,168.0 756.0,150.0 667.2,150.0" fill="#f0f0f0" stroke="#7d7d7d" stroke-width="2.4" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <text class="code" x="856.8" y="46.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">x = input_int()</text>
+    <text class="code" x="856.8" y="80.9" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">_2 = ({</text>
+    <text class="code" x="856.8" y="115.7" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">    _1 = input_int()</text>
+    <text class="code" x="856.8" y="150.5" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">    produce (_1 + 1)</text>
+    <text class="code" x="856.8" y="185.3" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">} if x &gt; 0 else 0)</text>
+    <text class="code" x="856.8" y="220.1" font-family="ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace" font-size="24.0" fill="#1c1f24" xml:space="preserve">print(_2)</text>
+  </g>
+</svg>

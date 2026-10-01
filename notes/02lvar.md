@@ -278,7 +278,7 @@ For example
 might be translated to
 
 ```
-lea (%edx,%ecx), %eax
+leaq (%edx,%ecx), %eax
 ```
 
 but this cannot be done if any of the args is a memory location.

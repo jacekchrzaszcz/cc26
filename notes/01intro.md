@@ -342,12 +342,14 @@ Use of LLMs is **strongly** discouraged, except for really menial tasks - you wi
 Substantial parts of the code in the lecture notes and lab support materials have been adapted by permission from Jeremy Siek's book *Essentials of Compilation*.
 
 
-
 ### Grading
 
 - Exam 40%
 - Lab projects 40%
 - Midterm (colloquium) 20%
+
+Lab projects must be submitted and presented by the dates indicated on moodle.<br/>
+Failure to submit or satisfactorily present the solution => 0p.
 
 For first exam admission at least 50% points from lab+midterm required
 (30% required for the reexam).
@@ -377,6 +379,16 @@ All project submissions need to be presented at the lab according to the calenda
 
 Independently, solutions need to be submitted to moodle.
 
+| Project      | Presentation   | Late Presentation | Moodle | Points
+|--------------|----------------|-----------------| -------- | ------
+| Lqua         | Week 2         | Week 3          | Oct 15   |  2
+| Lvar         | Week 3         | Week 4          | Oct 20   |  2
+| reg alloc    | Week 4         | Week 5          | Oct 27   |  5
+| loops        | Week 6         | Week 7          | Nov 10   |  5
+| functions    | Week 8         | Week 10         | Nov 24   | 10
+| extensions   | Week 11        | Week 12         | Dec 15   | up to 16
+
+
 | Project      | Presentation   | Late Presentation | Moodle submission
 |--------------|----------------|-----------------| -----
 | Lqua         | Week 2         | Week 3          | Oct 15
@@ -386,7 +398,9 @@ Independently, solutions need to be submitted to moodle.
 | functions    | Week 8         | Week 10         | Nov 24
 | extensions   | Week 11        | Week 12         | Dec 15
 
-Note: approximate dates, we reserve the right to make adjustments to this calendar.
+Note: approximate dates, binding dates on Moodle.
+
+**No submissions after the Moodle cut-off date ("ostateczny termin") will be accepted**
 
 ### Resources
 
@@ -435,9 +449,11 @@ Crucial restriction:
 
 > **At most one operand of an instruction may be a memory reference.**
 
-- for addq/subq - s can be a 32-bit constant (immediate)
-- for movq - s can be a 64 bit constant
+Rare corner-case:
 
+> if d is in memory,and s is immediate, then it is limited to 32 bit (signed)
+
+(`movq $4294967296, %rax` is allowed, `movq $4294967296, -8(%rbp)` is forbidden)
 
 ### x86 Instructions Example
 
@@ -624,5 +640,56 @@ Three variables need 24 bytes --- we subtract 32.
 
 Getting this wrong often leads to crashes inside `printf`, which are
 confusing to debug.
+
+
+## Conditional execution
+
+We will not need these for the first three labs, but for the future:
+
+| Instruction        | Meaning                                        |
+|--------------------|------------------------------------------------|
+| `cmpq s2, s1`      | compare; result goes to **EFLAGS**             |
+| `set<cc> d`        | byte `d` := 1 if EFLAGS matches `cc`, else 0        |
+| `movzbq s, d`      | move a byte register into a 64-bit destination (zero extend) |
+| `jmp label`        | unconditional jump                             |
+| `j<cc> label`      | jump if EFLAGS matches `cc`                    |
+| `xorq s, d`        | exclusive or --- we use it to implement `not`  |
+
+`<cc>` - condition codes: `e` `ne` `l` `le` `g` `ge`.
+
+New argument kind: **byte registers** `al`, `bl`, `cl`, `dl` --- the
+low bytes of `rax`, `rbx`, `rcx`, `rdx`.
+
+### cmpq --- three quirks
+
+```att
+cmpq %rbx, %rax        # sets flags as if computing  rax - rbx
+```
+
+1. **Operand order** `x < y` is `cmpq y, x` (as in `subq y, x`)
+2. **Result invisible.** In EFLAGS, which no instruction can name;
+   only `set<cc>` and `j<cc>` read it.
+3. **Second operand may not be an immediate.**<br/>
+   `cmpq $1, $2` does not
+   assemble --- `patch_instructions`' job (or eliminate it in
+   `shrink`).
+
+<!--
+X86 AST: `Instr('cmpq', [arg2, arg1])` for `Compare(arg1, [cmpop], [arg2])`.
+-->
+### set<cc> --- and the byte register
+
+`set<cc>` writes **one byte** --- its destination must be a byte
+register:
+
+```att
+cmpq  $1, %rcx
+sete  %al                # al := (rcx == 1)
+movzbq %al, %rdx         # rdx := zero-extend(al)
+```
+
+- `movzbq` (*move, zero-extend, byte to quad*) extends the value to 64-bit register<br/> (important, otherwise we may get garbage).
+- `%al` sits inside `%rax`, so writing it clobbers part of `%rax`. Our
+  read/write sets say `%rax`, not `%al`.
 
 # Questions?
