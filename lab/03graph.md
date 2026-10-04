@@ -107,6 +107,9 @@ Write some tests; make sure all key functionalities are covered.
 - submit to moodle before presenting
 - submit a single `<uid>.tar.gz` file, where uid is your user id on students, in the format `xy128410`
 
+After unpacking the archive, the compiler should be runnable with `uv run compiler.py <input file>`.
+Document options (in particular limiting register count) in README.
+
 ## Recommended practices
 
 Use git (or Jujutsu over git) for version management **from the start**.

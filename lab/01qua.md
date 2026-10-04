@@ -5,7 +5,7 @@ is described by the following abstract syntax (we use a subset of Python abstrac
 
 ```
 prog ::= Module(list[stmt])
-stmt ::= Expr( Call(Name('print'),[atm] ) | Assign(var,exp)
+stmt ::= Expr( Call(Name('print'),[atm] ) | Assign([Name(var)],exp)
 exp ::= atm
       | Call(Name='input_int', [])
       | UnaryOp(USuB(),atm)
@@ -157,11 +157,13 @@ Present your work on the next lab (2p) or a week later (1p).
 
 Submit a single `<uid>.tar.gz` file to moodle, where uid is your user id on students, in the format `xy128410`
 
+After unpacking the archive, the compiler should be runnable with `uv run compiler.py <input file>`.
+
 ## Recommended practices
 
 Use git (or Jujutsu over git) for version management **from the start**.
 
-Use uv for Python project management you can point it at support files instead of copying them:
+Use uv for Python project management; you can point it at support files instead of copying them:
 
 ```
 [tool.uv.sources]

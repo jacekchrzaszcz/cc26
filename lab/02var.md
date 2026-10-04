@@ -95,6 +95,7 @@ Submit your work on moodle (as tar.gz) before presenting.
 
 Submit a single `<uid>.tar.gz` file to moodle, where uid is your user id on students, in the format `xy128410`.
 
+After unpacking the archive, the compiler should be runnable with `uv run compiler.py <input file>`.
 
 ## Recommended practices
 
