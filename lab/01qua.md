@@ -5,7 +5,7 @@ is described by the following abstract syntax (we use a subset of Python abstrac
 
 ```
 prog ::= Module(list[stmt])
-stmt ::= Expr( Call(Name('print'),[atm] ) | Assign([Name(var)],exp)
+stmt ::= Expr( Call(Name('print'), [atm]) ) | Assign([var], exp)
 exp ::= atm
       | Call(Name='input_int', [])
       | UnaryOp(USuB(),atm)
