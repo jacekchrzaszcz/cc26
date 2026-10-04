@@ -136,6 +136,7 @@ movq %rax, -24(%rbp)
     movq %rbp, %rsp
     movq $0, %rax
     popq %rbp
+    retq
 ```
 The `movq $0 %rax` is optional but adding it in the `main` function may make testing easier, since return value from `main` becomes the program exit code and anything other than 0 can be interpreted as failure.
 
