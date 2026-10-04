@@ -23,8 +23,8 @@ int collatz(int n) {
 Answer me these questions three:
 
 - does `collatz` always return 1?
-- what's the best (correct) code a compiler can generate?
-- What is the air-speed velocity of an unladen swallow?
+- what is the best (correct) code a compiler can generate?
+- what is the air-speed velocity of an unladen swallow?
 
 
 ### Surprising solution
@@ -309,6 +309,7 @@ The nanopass approach:
 - start with the backend for a small language
 - always have a working compiler
 - grow the language by adding features
+- every pass has a single, well-defined purpose
 
 ### Course Organisation
 
@@ -423,8 +424,9 @@ prog  ::= .globl main
 
 - 16 general-purpose 64-bit registers.
 - `$n` is an *immediate*;
-- `n(%r)` is memory at address `r + n`, e.g. `-16(%rbp) ~ M[%rbp - 16]
-- Suffix `q` = quadword = 64 bits; in most cases can be omitted, but the book and GNU tools use it.
+- `n(%r)` is memory at address `r + n`, e.g. `-16(%rbp) ~ M[%rbp - 16];
+- n (without $) means M[n] so `movq 0, %rax` is usually bad;<br/> `movq %rax, 0` potentially even worse;
+- Suffix `q` = quadword = 64 bits; in most cases can be omitted,>br/> but the book and GNU tools use it.
 
 
 ### Instruction semantics
@@ -433,8 +435,14 @@ prog  ::= .globl main
 - `addq s, d` --- `d := d + s` (**in place**, two operands only)
 - `subq s, d` --- `d := d - s`
 - `negq d`    --- `d := -d`
+- `pushq s`   --- push `s` (usually a register) on the stack
+- `popq d`    --- pop top 8 bytes off the stack into  `d`
 - `callq f`   --- push return address, jump to `f`
 - `retq`      --- pop return address and jump to it
+
+We will discuss stack in a moment.
+
+### Restrictions
 
 Crucial restriction:
 
@@ -505,7 +513,9 @@ Here we get 42, but exit code 0 conventionally means success<br/>
 --- so we will
 normally set `%rax` to 0 at the end and call a function to print results.
 
-### Using memory --- computing `52 + -10`
+### Using memory
+
+Using variables: `x = 10; x = -x; return x + 52`
 
 ```att
     .globl main
@@ -522,7 +532,8 @@ main:
     retq
 ```
 
-The intermediate result lives on the stack; %rbp is commonly used to address local/temporary variables
+The intermediate result lives on the stack;<br/>
+%rbp is commonly used to address local/temporary variables
 
 ### The stack
 
@@ -545,6 +556,25 @@ The *procedure call stack* consists of a *frame* per active call.
 
 ### Prelude and conclusion
 
+
+Prelude:
+
+```att
+pushq %rbp          # save the caller frame pointer
+movq %rsp, %rbp     # set the new frame pointer
+subq $N, %rsp       # reserve space for local variables
+```
+
+Conclusion:
+
+``` att
+addq $N, %rsp      # free local variables
+popq %rbp          # restore caller frame pointer
+retq               # return to caller
+```
+
+### main function
+
 Wrap the instruction sequence in `main`:
 
 ```att
@@ -554,23 +584,11 @@ main:
     movq  %rsp, %rbp
     subq  $N, %rsp        # N = frame size, multiple of 16
     ...                   # the compiled program
-    addq  $N, %rsp
     movq  $0, %rax        # exit code 0
+    addq  $N, %rsp
     popq  %rbp
     retq
 ```
-
-Prelude:
-
-- save the caller frame pointer
-- set the new frame pointer
-- reserve space for local variables
-
-Conclusion:
-
-- frees local variables
-- restore caller frame pointer
-- return to caller
 
 ### Calling functions
 We will deal with functions later, for now we have to handle reading and printing
@@ -651,23 +669,6 @@ We will not need these for the first three labs, but for the future:
 New argument kind: **byte registers** `al`, `bl`, `cl`, `dl` --- the
 low bytes of `rax`, `rbx`, `rcx`, `rdx`.
 
-### cmpq --- three quirks
-
-```att
-cmpq %rbx, %rax        # sets flags as if computing  rax - rbx
-```
-
-1. **Operand order** `x < y` is `cmpq y, x` (as in `subq y, x`)
-2. **Result invisible.** In EFLAGS, which no instruction can name;
-   only `set<cc>` and `j<cc>` read it.
-3. **Second operand may not be an immediate.**<br/>
-   `cmpq $1, $2` does not
-   assemble --- `patch_instructions`' job (or eliminate it in
-   `shrink`).
-
-<!--
-X86 AST: `Instr('cmpq', [arg2, arg1])` for `Compare(arg1, [cmpop], [arg2])`.
--->
 ### set<cc> --- and the byte register
 
 `set<cc>` writes **one byte** --- its destination must be a byte
