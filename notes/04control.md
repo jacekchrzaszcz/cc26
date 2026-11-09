@@ -898,6 +898,14 @@ New with `while`: an unbounded number of executions of the same
 instruction. <br/>
 *Placing* values now matters far more than it did.
 
+### The pipeline
+
+![](loops-pipeline.svg)
+
+Identical to `Lif`'s, one arrow excepted: `if2.py` sweeps the CFG in
+reverse topological order, and a loop makes that order not exist.
+`loops.py` replaces the sweep with a worklist fixpoint.
+
 ### A test's temporaries belong to the test
 
 The test runs again on every iteration. So where do *its* temporaries
