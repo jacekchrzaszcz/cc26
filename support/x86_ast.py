@@ -51,7 +51,7 @@ class X86Program:
 
 @dataclass
 class X86ProgramDefs:
-    defs: list[ast.FunctionDef]
+    defs: list[X86Def]
 
     def __str__(self):
         return "\n".join([str(d) for d in self.defs])
